@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tabelas</title>
+</head>
+
+<style>
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 15px;
+  }
+
+  td {
+    text-align: center;
+  }
+
+  tfoot td {
+    font-style: italic;
+  }
+
+  caption {
+    padding: 15px;
+  }
+</style>
+
+<body>
+  <header>Tabela</header>
+  <main>
+    <table style="width: 50%">
+      <caption>
+        Notas na disciplina de Química
+      </caption>
+      <thead>
+        <tr>
+          <th>Nome do aluno</th>
+          <th>Nota do aluno</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Aluno A</td>
+          <td>99</td>
+        </tr>
+        <tr>
+          <td>Aluno B</td>
+          <td>66</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Média</td>
+          <td>82.5</td>
+        </tr>
+      </tfoot>
+    </table>
+  </main>
+  <footer>
+    <br />
+    <a href="index.html">Home🏰</a>
+  </footer>
+</body>
+
+</html>
