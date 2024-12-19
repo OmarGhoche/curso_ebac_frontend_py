@@ -2,8 +2,8 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Formulário 1</title>
 
   <style>
@@ -29,58 +29,58 @@
       width: 50%;
     }
   </style>
-
 </head>
 
 <body>
-  <h1>Formulário de cadastro</h1>
+  <h1 id="h1">Formulário de cadastro</h1>
 
   <main>
-    <form action="./forms.html" method="get" name="form" id="form">
+    <form id="form" onsubmit="return handleFormSubmit()">
+      <!--action="./forms.html" method="get" name="form"  -->
       <label for="nome">Seu nome</label>
-      <input type="text" name="nome" id="nome" required>
-      <hr>
+      <input type="text" name="nome" id="nome" required />
+      <hr />
       <label for="email">Seu e-mail</label>
-      <input type="email" name="email" id="email" required>
-      <hr>
+      <input type="email" name="email" id="email" required />
+      <hr />
       <label for="tel">Seu tel</label>
-      <input type="tel" name="tel" id="tel" required>
-      <hr>
+      <input type="tel" name="tel" id="tel" required />
+      <hr />
       <label for="num">Sua idade</label>
-      <input type="number" name="num" id="num" min="0" max="99">
-      <hr>
-      <label for="bio">Sobre você</label><br>
+      <input type="number" name="num" id="num" min="0" max="99" />
+      <hr />
+      <label for="bio">Sobre você</label><br />
       <textarea form="form" name="bio" id="bio"></textarea>
-      <hr>
+      <hr />
       <label for="file">Sua identidade</label>
-      <input type="file" name="file" id="file">
-      <hr>
+      <input type="file" name="file" id="file" />
+      <hr />
       <label for="color">Sua cor</label>
-      <input type="color" name="color" id="color">
+      <input type="color" name="color" id="color" />
       <fieldset form="form">
         <legend>Você é LGBTQIAPN+ ?</legend>
-        <input type="radio" name="lgbt" id="lgbt"><label for="lgbt">SIM</label>
-        <input type="radio" name="lgbt" id="lgbt-not"><label for="lgbt-not">NÃO</label>
-        <input type="radio" name="lgbt" id="lgbt-quiet"><label for="lgbt-quiet">PREFIRO NÃO RESPONDER</label>
+        <input type="radio" name="lgbt" id="lgbt" value="Sim"/><label for="lgbt">SIM</label>
+        <input type="radio" name="lgbt" id="lgbt-not" value="Não"/><label for="lgbt-not">NÃO</label>
+        <input type="radio" name="lgbt" id="lgbt-quiet" value="Prefiro não responder"/><label for="lgbt-quiet">PREFIRO NÃO RESPONDER</label>
       </fieldset>
       <p>Onde ficou sabendo sobre nós?</p>
       <select name="select" id="select" form="form">
         <option disabled selected>-- selecione uma opção --</option>
-        <option value="1">Google</option>
-        <option value="2">Instagram</option>
-        <option value="3">Facebook</option>
-        <option value="4">Whatsapp</option>
-        <option value="4">Youtube</option>
-        <option value="5">LinkedIn</option>
+        <option value="Google">Google</option>
+        <option value="Instagram">Instagram</option>
+        <option value="Facebook">Facebook</option>
+        <option value="Whatsapp">Whatsapp</option>
+        <option value="Youtube">Youtube</option>
+        <option value="LinkedIn">LinkedIn</option>
       </select>
       <fieldset form="form">
         <legend>Seu consentimento</legend>
-        <input type="checkbox" name="check" id="check" required>
+        <input type="checkbox" name="check" id="check" required />
         <label for="check">OK</label>
       </fieldset>
 
-      <input type="submit" form="">
-      <input type="reset">
+      <input type="submit" value="Enviar" />
+      <input type="reset" />
 
       <!-- <button type="reset" form="form">limpar</button>
       <button type="submit" form="form">enviar</button> -->
@@ -88,15 +88,55 @@
   </main>
 
   <footer>
-    <br>
+    <br />
     <a href="./index.html">Home🛖</a>
   </footer>
-
 </body>
 
 <script>
+  // document.getElementById("form").addEventListener("submit", function (e) {
+  //   e.preventDefault(); // Prevent form submission
 
-//TODO
+
+  function handleFormSubmit() {
+        // Get form values
+    const nome = document.getElementById("nome").value;
+    const email = document.getElementById("email").value;
+    const tel = document.getElementById("tel").value;
+    const idade = document.getElementById("num").value;
+    const bio = document.getElementById("bio").value;
+    const color = document.getElementById("color").value;
+    const lgbt =
+      document.querySelector('input[name="lgbt"]:checked')?.value ||
+      "Não especificado";
+    const source = document.getElementById("select").value;
+
+    // Create a popup div
+    const popup = document.createElement("div");
+    popup.className = "popup";
+    popup.style.backgroundColor = color;
+
+    // Add content to the popup
+    popup.innerHTML = `
+        <h2>Confirmação</h2>
+        <p><strong>Nome:</strong> ${nome}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Telefone:</strong> ${tel}</p>
+        <p><strong>Idade:</strong> ${idade}</p>
+        <p><strong>Sobre você:</strong> ${bio}</p>
+        <p><strong>LGBTQIAPN+:</strong> ${lgbt}</p>
+        <p><strong>Fonte:</strong> ${source}</p>
+        <br/>
+        <button onclick="location.reload();">Recarregar</button>
+      `;
+
+      // <button onclick="this.parentElement.remove()">Fechar</button>
+
+    // Append popup to the body
+    document.body.appendChild(popup);
+    document.getElementById("form").remove()
+    document.getElementById("h1").remove()
+  }
 
 </script>
 
