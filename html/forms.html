@@ -4,6 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Omar Mohamad Abou Ghoche">
+  <meta name="description" content="Form to create an account">
+  <meta name="keywords" content="HTML, Form">
+  <!-- <meta http-equiv="refresh" content="5"> -->
+
   <title>Formulário 1</title>
 
   <style>
@@ -59,9 +64,10 @@
       <input type="color" name="color" id="color" />
       <fieldset form="form">
         <legend>Você é LGBTQIAPN+ ?</legend>
-        <input type="radio" name="lgbt" id="lgbt" value="Sim"/><label for="lgbt">SIM</label>
-        <input type="radio" name="lgbt" id="lgbt-not" value="Não"/><label for="lgbt-not">NÃO</label>
-        <input type="radio" name="lgbt" id="lgbt-quiet" value="Prefiro não responder"/><label for="lgbt-quiet">PREFIRO NÃO RESPONDER</label>
+        <input type="radio" name="lgbt" id="lgbt" value="Sim" /><label for="lgbt">SIM</label>
+        <input type="radio" name="lgbt" id="lgbt-not" value="Não" /><label for="lgbt-not">NÃO</label>
+        <input type="radio" name="lgbt" id="lgbt-quiet" value="Prefiro não responder" /><label for="lgbt-quiet">PREFIRO
+          NÃO RESPONDER</label>
       </fieldset>
       <p>Onde ficou sabendo sobre nós?</p>
       <select name="select" id="select" form="form">
@@ -99,7 +105,7 @@
 
 
   function handleFormSubmit() {
-        // Get form values
+    // Get form values
     const nome = document.getElementById("nome").value;
     const email = document.getElementById("email").value;
     const tel = document.getElementById("tel").value;
@@ -130,7 +136,7 @@
         <button onclick="location.reload();">Recarregar</button>
       `;
 
-      // <button onclick="this.parentElement.remove()">Fechar</button>
+    // <button onclick="this.parentElement.remove()">Fechar</button>
 
     // Append popup to the body
     document.body.appendChild(popup);
