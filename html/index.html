@@ -1,56 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Omar Mohamad Abou Ghoche">
+  <meta name="description" content="Pratica formulário HTML">
+  <meta name="keywords" content="HTML, Form, EBAC">
+
+  <title>Formulário</title>
+</head>
+
+<body>
+
+  <!-- Criar um arquivo HTML que contenha um formulário de cadastro, com os campos nome,
+  e-mail e senha e a existência de um botão para realizar o cadastro; -->
+
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu milésimo HTML</title>
+    <h1>Formulário de cadastro</h1>
   </head>
-  <body>
+  <main>
+    <form action="submit.html" method="POST">
+      <label for="name">Nome</label>
+      <input type="text" id="name" min="3" required>
+      <hr>
+      <label for="e-mail">E-mail</label>
+      <input type="email" id="e-mail" required>
+      <hr>
+      <label for="pswd">Senha</label>
+      <input type="password" name="pswd" id="pswd" required>
+      <hr>
+      <input type="submit" value="Cadastrar">
+    </form>
+  </main>
+  <footer></footer>
+</body>
 
-    <h1 id="topo" style="color: blueviolet;">Topo da Página</h1> <br>
-
-    <h1>Minha tag h1</h1> <br>
-    <h2>Minha tag h2</h2> <br>
-    <h3>Minha tag h3</h3> <br>
-    <h4>Minha tag h4</h4> <br>
-    <h5>Minha tag h5</h5> <br>
-    <h6>Minha tag h6</h6> <br>
-
-    <hr />
-
-    <p>
-      <strong>Lorem</strong> ipsum dolor <br> sit amet <br> consectetur <br> adipisicing elit. <br> Dolorem sequi
-      necessitatibus <br> sapiente <em>repudiandae</em> ducimus <br> tenetur <mark> eos </mark> doloribus <br>
-      sunt labore <del> est <br> praesentium </del> <big> animi </big> <br>
-      deleniti, <small> amet </small> quis <br> ipsa <br> reprehenderit
-      sed <br> veniam.
-
-      <span></span>
-
-    </p>
-
-    <hr />
-
-    <a href="http://google.com" title="Ir para o site do google">GOOGLE</a> <br>
-    <a href="mailto:omar@gmail.com">E-mail ✉️</a> <br>
-    <a href="tel:+5545991139099">Telefone 📞</a> <br>
-
-    <br>
-    
-    <hr>
-
-    <blockquote>
-      "Never give up!"
-    </blockquote>
-
-    <hr>
-
-    <address>
-      Rua Porto Alegre, n 178. Foz do Iguaçu. BR
-    </address>
-
-    <a href="#topo">Voltar ao topo</a>
-
-
-  </body>
 </html>
