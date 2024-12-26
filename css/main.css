@@ -1,0 +1,50 @@
+*, *::before, *::after {
+  /* color: red; */
+  box-sizing: inherit ;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: magenta;
+}
+
+h1 strong {
+  color: darkgreen;
+}
+
+h2 {
+  color: chartreuse;
+}
+
+p, h3 {
+  color: orange;
+}
+
+#economy h2 {
+  color: gold;
+}
+
+time {
+  color: #4a4a4a;
+}
+
+.hipertext {
+  color: dodgerblue;
+}
+
+.hipertext:hover {
+  color: blue;
+}
+
+ul li:first-child {
+  background-color: blueviolet;
+}
+
+ul li:last-child {
+  background-color: sienna;
+}

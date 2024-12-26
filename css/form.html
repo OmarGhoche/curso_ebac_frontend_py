@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" type="text/css" href="./styles-form.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Formulário de Login</h1>
+  </header>
+  <main>
+    <form>
+      <label for="user">Usúario:</label>
+      <input type="text" name="user" id="user" required>
+      <hr>
+      <label class="senha" for="senha">Senha:</label>
+      <input type="password" name="senha" id="senha" required>
+      <hr>
+      <label class="mail" for="mail">Idade:</label>
+      <input type="email" name="mail" id="mail">
+      <br><br>
+      <fieldset>
+        <legend>Qual letra pefere?</legend>
+        <input type="checkbox" name="c1" id="c1">
+        <label for="c1">A</label>
+        <input type="checkbox" name="c2" id="c2">
+        <label for="c2">B</label>
+        <input type="checkbox" name="c3" id="c3">
+        <label for="c3">C</label>
+        <input type="checkbox" name="c4" id="c4">
+        <label for="c4">D</label>
+      </fieldset>
+      <!-- <label>
+        <input type="checkbox" id="checkbox"> Aceito os termos
+      </label> -->
+      <br>
+      <button class="btn-send" type="submit">Enviar</button>
+      <button class="btn-erase" type="reset">Apagar</button>
+    </form>
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+/* body {
+  background-color: black;
+  color: white;
+} */
+
+.btn-send {
+  background-color: greenyellow;
+}
+
+.btn-erase {
+  background-color: palevioletred;
+}
+
+hr {
+  width: 50%;
+  margin: 12px 0;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+.senha {
+  /* color: red; */
+  /* font-size: 16px; */
+  font-kerning: none;
+  letter-spacing: 1.8px;
+}
+
+/* pseudo-classes */
+
+input:checked {
+  /* background-color: yellow; */
+  outline: 2px solid green;
+}
+
+input:required {
+  border: 2px solid red;
+}
+
+input:optional {
+  border: 1px solid blue;
+}
+
+input:invalid {
+  border-color: red;
+}
+input:valid {
+  border-color: green;
+}
+
+/* input[type="text"]:focus{
+  background-color: aqua;
+}
+
+input[type="password"]:focus{
+  background-color: yellow;
+} */
+
+
