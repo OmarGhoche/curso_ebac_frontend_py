@@ -28,6 +28,34 @@ header li {
   width: 30%;
 }
 
+/* h1::before {
+  content: "🎉! ";
+  color: green;
+}
+
+h1::after {
+  content: " !✨";
+  color: blue;
+} */
+
+a:hover::after {
+  content: " (Clique para saber mais)";
+  font-size: 0.8rem;
+  color: gray;
+}
+
+p::first-line {
+  font-weight: bold;
+}
+
+p::first-letter {
+  font-size: 2rem;
+  color: red;
+}
+
+
+
+
 /* html {
   box-sizing: border-box;
 }
