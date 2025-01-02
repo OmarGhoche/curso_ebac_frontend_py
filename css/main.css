@@ -5,8 +5,28 @@
   padding: 0;
 }
 
+body > header {
+  background-color: gray;
+  /* padding: 16px 0; */
+  color: #fff;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 header li {
   display: inline;
+}
+
+header li a {
+  color: #fff;
+}
+
+header li:last-child::before {
+  content: " | ";
 }
 
 .container {
@@ -28,6 +48,28 @@ header li {
   width: 30%;
 }
 
+.articles article h3 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+section {
+  padding: 16px 0;
+}
+
+section h2,
+.articles article {
+  margin-bottom: 16px;
+}
+
+.articles article a {
+  background-color: blue;
+  color: #fff;
+  padding: 8px;
+  margin: 2px;
+  display: inline-block;
+}
+
 /* h1::before {
   content: "🎉! ";
   color: green;
@@ -38,11 +80,11 @@ h1::after {
   color: blue;
 } */
 
-a:hover::after {
+/* a:hover::after {
   content: " (Clique para saber mais)";
   font-size: 0.8rem;
   color: gray;
-}
+} */
 
 p::first-line {
   font-weight: bold;
@@ -53,7 +95,13 @@ p::first-letter {
   color: red;
 }
 
-
+/* Aplica o estilo quando a tela é maior que 900px */
+@media (min-width: 900px) {
+  hr {
+    width: 95%; /* Para telas maiores, centraliza */
+    margin: 20px auto;
+  }
+}
 
 
 /* html {
