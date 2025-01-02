@@ -19,15 +19,18 @@ header .container {
 
 header li {
   display: inline;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 16px;
 }
 
 header li a {
   color: #fff;
+  text-decoration: none;
 }
 
-header li:last-child::before {
+/* header li:last-child::before {
   content: " | ";
-}
+} */
 
 .container {
   width: 1366px;
@@ -41,7 +44,8 @@ header li:last-child::before {
 }
 
 .articles article img {
-  height: 180px;
+  /* height: 180px; */
+  width: 100%;
 }
 
 .articles article {
@@ -68,6 +72,13 @@ section h2,
   padding: 8px;
   margin: 2px;
   display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.articles article a:hover {
+  background-color: darkblue;
 }
 
 /* h1::before {
@@ -147,3 +158,34 @@ ul li:first-child {
 ul li:last-child {
   background-color: sienna;
 } */
+
+.articles article p,
+.articles article a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+.articles article h3 {
+  font-size: 24px;
+}
+
+section h2 {
+  font-size: 32px;
+}
+
+#sports {
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+#sports .articles article a {
+  background-color: green;
+}
+
+#sports .articles article a:hover {
+  background-color: darkgreen;
+}
+
+#economy {
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
