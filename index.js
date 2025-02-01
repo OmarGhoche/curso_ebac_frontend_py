@@ -4,10 +4,10 @@ let span = document.querySelector("span");
 form.addEventListener("submit", (e) => {
     e.preventDefault()
 
-    let min = parseInt(document.querySelector("#min").value);
-    let max = parseInt(document.querySelector("#max").value);
+    let min = parseInt(document.getElementById("min").value);
+    let max = parseInt(document.getElementById("max").value);
 
-    console.log(`min = ${min}\nmax = ${max}`)
+    // console.log(`min = ${min}\nmax = ${max}`)
 
     if (max > min && !isNaN(min)) {
         span.innerHTML = "Valores de MIN e MAX enviados"
