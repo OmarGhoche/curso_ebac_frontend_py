@@ -1,37 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>✅TASKS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@700&family=Playwrite+IT+Moderna&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./main.css" />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBAC Shoes</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- Google Fonts - Optional but recommended -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <h1>EBAC Shoes</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre a loja</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <body>
-    <div class="container">
-      <header>
-        <p>Lista de tarefas</p>
-      </header>
-      <form>
-        <input type="text" id="task" required placeholder="Nome da tarefa" />
-        <button type="submit">CADASTRAR</button>
-      </form>
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre a loja</h2>
+            <div class="sobre-content">
+                <div class="sobre-imagem">
+                    <img src="https://ebac-shoes.vercel.app/loja.jpeg" alt="Trainer Central - Nossa loja física">
+                </div>
+                <div class="sobre-texto">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorum labore repudiandae, aliquam laudantium ipsum quas inventore, possimus aperiam expedita qui quidem voluptates quae, vitae magni tempora eveniet itaque natus?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorum labore repudiandae, aliquam laudantium ipsum quas inventore, possimus aperiam expedita qui quidem voluptates quae, vitae magni tempora eveniet itaque natus?</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <ul>
-      </ul>
-    </div>
-  </body>
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h2>Produtos</h2>
+            <div class="produtos-grid">
+                <!-- Produto 1 -->
+                <div class="produto-card">
+                    <div class="produto-imagem">
+                        <img src="https://ebac-shoes.vercel.app/sapato1.jpeg" alt="Tênis Nike Modelo XPTO">
+                        <span class="produto-selo">Produto exclusivo</span>
+                    </div>
+                    <h3>Tênis Nike Modelo XPTO</h3>
+                    <p>Tênis Adidas preto, disponível nos tamanhos: 37, 38, 39, 40 e 42</p>
+                    <button class="btn-adicionar">Adicionar ao carrinho</button>
+                </div>
 
-  <script
-    src="https://code.jquery.com/jquery-3.7.1.js"
-    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-    crossorigin="anonymous"
-  ></script>
-  <script src="./main.js"></script>
+                <!-- Produto 2 -->
+                <div class="produto-card">
+                    <div class="produto-imagem">
+                        <img src="https://ebac-shoes.vercel.app/sapato1.jpeg" alt="Tênis Adidas Modelo XPTO">
+                    </div>
+                    <h3>Tênis Adidas Modelo XPTO</h3>
+                    <p>Tênis Adidas preto, disponível nos tamanhos: 37, 38, 39, 40 e 42</p>
+                    <button class="btn-adicionar">Adicionar ao carrinho</button>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="produto-card">
+                    <div class="produto-imagem">
+                        <img src="https://ebac-shoes.vercel.app/sapato1.jpeg" alt="Tênis Vans Modelo XPTO">
+                    </div>
+                    <h3>Tênis Vans Modelo XPTO</h3>
+                    <p>Tênis Vans preto, disponível nos tamanhos: 37, 38, 39, 40 e 42</p>
+                    <button class="btn-adicionar">Adicionar ao carrinho</button>
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="produto-card">
+                    <div class="produto-imagem">
+                        <img src="https://ebac-shoes.vercel.app/sapato1.jpeg" alt="Tênis Van Infantil Modelo XPTO">
+                    </div>
+                    <h3>Tênis Van Infantil Modelo XPTO</h3>
+                    <p>Tênis Vans preto, disponível nos tamanhos: 27, 28, 29 e 30</p>
+                    <button class="btn-adicionar">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 EBAC Shoes - Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
 </html>

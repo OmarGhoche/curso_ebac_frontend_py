@@ -1,3 +1,3 @@
 # Profissão: Desenvolvedor Full Stack Python
 
-Pratique, módulo 9 JQuery
+Pratique, módulo 11 - Criar um layout responsivo de uma loja virtual;
