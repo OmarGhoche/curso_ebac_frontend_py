@@ -1,7 +1,11 @@
 # Profissão: Desenvolvedor Full Stack Python
 
-Projetos criados durante o curso:
+### Exercício Módulo 12:
 
-[calc_medias_ebac](https://github.com/OmarGhoche/calc_medias_ebac) <br/>
-[agenda_contatos_ebac](https://github.com/OmarGhoche/agenda_contatos_ebac) <br/>
-[photo-gallery-ebac](https://github.com/OmarGhoche/photo-gallery-ebac)
+* Adicionar o Bootstrap em uma página HTML utilizando a CDN;
+
+* Nesta página HTML, crie um formulário de cadastro que deverá conter os campos: nome, e-mail e telefone, e um botão para o envio;
+
+* Aplique as classes do Bootstrap nos elementos do formulário;
+
+> Bônus: Utilizar JQuery para máscara do formulário e validação.
